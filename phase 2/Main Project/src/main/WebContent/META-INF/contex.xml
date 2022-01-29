@@ -1,0 +1,6 @@
+
+<Context>
+
+<Resource url="jdbc:mysql://localhost:3306/AdminstrativePortal" driverClassName="com.mysql.cj.jdbc.Driver" password="1234" username="root" maxWait="10000" maxIdle="5" maxActive="20" type="javax.sql.DataSource" auth="Container" name="AdminstrativePortal"/>
+
+</Context>
