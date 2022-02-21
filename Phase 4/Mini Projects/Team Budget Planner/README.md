@@ -1,67 +1,38 @@
-## Building a Restaurant Website with Bootstrap
-### DESCRIPTION
+# Team-Budget-Planner
+## DESCRIPTION
+As a developer, write a program using JavaScript to decide the budget of a specific team. Background of the problem statement: As a developer, you are assigned to a project. You need to develop a website where program managers of a specific team will add details of professional deals they want to have with vendors. The finance team will check expenses of those teams and will decide their annual budget. You must use the following:
 
-Build a responsive website for a restaurant where users can read the details of the restaurant.
-
-### Background of the problem statement:
-
-You are a web developer at a service-based web development company called Kite Technologies. The company has been approached by a client who wants to build a website for their restaurant named Ming’s Diner. The website should provide the users a brief overview of the restaurant and its bestsellers, its address, as well as an option to contact the restaurant. During sprint planning, you agree to lead this project and develop the website. The tasks you are responsible for:
-
- - Building the website using HTML
-
- - Adding Bootstrap to the website
-
- - Adding a landing page, a navbar, a CTA button, a grid, and a footer
-
- - Adding a contact form for users to contact the restaurant
-
- - Pushing the code to the git repository
-
-### You must use the following tools:
-
- - HTML: To define the content of the website
-
- - Bootstrap: To build the website
-
- - JavaScript: To handle events and responses
-
- - JQuery: To include JavaScript plugins like modals, tooltips, etc.
-
-### The following requirements should be met:
-
- - The website should be responsive.
-
- - The website should have a carousel, a navbar, a CTA button, a grid, and a footer.
-
- - The website should have a contact form.
-
- - The source code should be pushed to your GitHub repositories. You need to document the steps and write the algorithms in the Google Docs.
-
- - The link of your GitHub repository is must. In order to track your task, you need to share the link of the repository. You can add a section in the Google Docs.
-- Document the step-by-step process involved in completing this task.
-
-
-
+Visual Studio Code: An IDE to code for the application
+JavaScript: A programming language
+Git: To connect and push files from the local system to GitHub
+GitHub: To store the application code and track its versions
+JavaScript concepts: Functions, prototypes, primitives, objects, IIFEs, promises, async, and webpack Following requirements should be met:
+Versions of the code should be tracked on GitHub repositories
+Team Budget Planner should work properly
 
 ## List of technologies used in this project:
-- HTML5
-- CSS3 
-- Java Script
-- Bootstrap 5
-- GitHub
-- Visual Studio Code
-- Live Server
+1. HTML5
+1. CSS3
+1. Java Script
+1. Font Awesome CDN
+1. Bootstrap 5
+1. swal(sweetalert)
+1. GitHub
+1. Visual Studio Code
+1. Live Server
+
+## JavaScript concepts used:
+functions,Objects, arrays, variables, local storage, JSON.parse(), DOM, loop
+
+## APP Screenshot 
+
+ ![image](https://user-images.githubusercontent.com/84631708/155014322-3187d5ad-d7d0-41ca-876a-59ad117bfcb5.png)
+
+ ![image](https://user-images.githubusercontent.com/84631708/155014470-b0b97a15-3a6f-437d-bc15-a08f01bae898.png)
+ 
+ ![image](https://user-images.githubusercontent.com/84631708/155014523-c0e8f48d-6427-426a-b153-7037fc03de7d.png)
+ 
+ ![image](https://user-images.githubusercontent.com/84631708/155014550-87ad214c-8f26-4445-9106-5c6de5fe1d13.png)
 
 
-
-## App Screenshot:
-
-![website](https://drive.google.com/uc?export=view&id=15GbSmgd5Nyw0fOq8EOVIAESxjrsZI5qL)
-![website](https://drive.google.com/uc?export=view&id=11F6U7DYQ0JhADwPpHk5Aa2SOCbRL2sHg)
-![website](https://drive.google.com/uc?export=view&id=1P0vpk1TifEx1zdxcPbSaAyHJTPWFBAuV)
-
-
-
-
-
-
+ ![image](https://user-images.githubusercontent.com/84631708/155014580-e85f75c6-beaf-4a4f-b0cd-d84ea865bcdb.png)
