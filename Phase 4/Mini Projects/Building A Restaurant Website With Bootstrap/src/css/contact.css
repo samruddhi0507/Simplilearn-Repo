@@ -1,0 +1,17 @@
+.container-fluid.main-header {
+
+    background-image: linear-gradient(to right top,
+            #000000,
+            #030506,
+            #190b1d58,
+            #200618,
+            #25011054),
+        url("https://images.unsplash.com/photo-1521917441209-e886f0404a7b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1460&q=80");
+
+}
+
+
+label {
+    font-family: sans-serif;
+    font-weight: 600;
+}
