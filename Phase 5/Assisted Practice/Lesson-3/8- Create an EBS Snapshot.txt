@@ -1,0 +1,30 @@
+Assisted Practice: 3.8 Create an EBS Snapshot
+
+This section will guide you to: 
+●	Create an EBS snapshot
+
+This lab has two subsection, namely:
+3.8.1 Creating an EBS snapshot
+3.8.2 Pushing the file to GitHub repositories
+
+Step 3.8.1: Creating an EBS snapshot
+●	Select Volume in EC2 dashboard 
+●	Click on Action -> Create Snapshot
+ 
+
+●	Add snapshot name, key, and value
+ 
+
+
+Step 3.8.2: Pushing the code to your GitHub repositories
+●	Open your command prompt and navigate to the folder where you have created your files.
+cd <folder path>
+●	Initialize your repository using the following command:
+git init
+●	Add all the files to your git repository using the following command:
+git add .
+●	Commit the changes using the following command:
+git commit .  -m “Changes have been committed.”
+●	Push the files to the folder you initially created using the following command:
+git push -u origin master
+

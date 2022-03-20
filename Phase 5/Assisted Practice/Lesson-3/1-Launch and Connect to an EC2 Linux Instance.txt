@@ -1,0 +1,69 @@
+Assisted Practice: 3.1 Launch and Connect to an EC2 Linux Instance
+
+This section will guide you to: 
+●	Launch and connect to an EC2 instance
+
+This lab has three subsections, namely:
+3.1.1 Launching an EC2 instance
+3.1.2 Connecting to the EC2 instance
+3.1.3 Pushing the files to GitHub repositories
+
+Step 3.1.1: Launching an EC2 instance
+●	Go to Amazon dashboard
+●	Select EC2
+ 
+●	Click on launch instance to run any instance
+ 
+●	Select the AMI 
+ 
+●	Select t2.micro as the instance type
+ 
+●	Specify the number of instances, networks, placement groups, and IAM roles and click Next
+ 
+●	There is one volume attached to the instance by default
+●	 In Linux, the default volume attached is 8 GB 
+●	You can add more volume if required
+ 
+●	You can add a key-value pair to the instance
+ 
+ 
+●	Attach the three policy groups depending on the type of access required
+ 
+●	Select an existing key-value pair to launch the instance
+ 
+ 
+●	The instance is ready to use
+ 
+●	Click on Connect on EC2 dashboard
+●	 Run the ssh command provided
+ 
+ 
+
+Step 3.1.2: Connecting to an EC2 instance
+●	Run the following command to launch a website over EC2:
+ yum install httpd -y
+ 
+●	Navigate to /var/www/html and create index.html file using command 
+vi index.html
+ 
+●	Enter I and start creating HTML file content
+●	Once done, type :wq!
+
+ 
+●	Using public IP of EC2 instance, you can see your app running on the browser
+ 
+ 
+
+
+Step 3.1.3: Pushing the code to your GitHub repositories
+●	Open your command prompt and navigate to the folder where you have created your files.
+cd <folder path>
+●	Initialize your repository using the following command:
+git init
+●	Add all the files to your git repository using the following command:
+git add .
+●	Commit the changes using the following command:
+git commit .  -m “Changes have been committed.”
+●	Push the files to the folder you initially created using the following command:
+git push -u origin master
+

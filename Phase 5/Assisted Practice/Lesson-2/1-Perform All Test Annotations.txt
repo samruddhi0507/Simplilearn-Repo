@@ -1,0 +1,108 @@
+Assisted Practice: 2.1 Perform All Test Annotations
+
+This section will guide you to:
+●	Implement @Test and other related Annotations
+
+Development Environment
+●	Eclipse IDE for Enterprise Java Developers v2019-03 (4.11.0)
+●	JRE: OpenJDK Runtime Environment 11.0.2
+●	TestNG
+
+This lab has six subsections, namely:
+2.1.1	Creating a simple Java project
+2.1.2	Installing TestNG
+2.1.3	Adding TestNG libraries to the Class Path
+2.1.4	Creating a class file named TestAnnotations
+2.1.5	Running the project as TestNG
+2.1.6	Pushing the code to your GitHub repositories
+
+
+Step 2.1.1: Creating a simple Java project
+●	Open Eclipse
+●	Go the File menu. Choose New->Java Project
+●	Enter the project name as Annotations. Click on Next
+●	This will create the project files in the Project Explorer
+
+
+
+
+
+
+
+Step 2.1.2: Installing TestNG
+●	TestNG is installed as an eclipse plugin in your practice lab. (Refer FSD: Lab Guide - Phase 5)
+
+Step 2.1.3: Adding TestNG libraries to the Class Path
+●	In the Project Explorer, right click on Annotations
+●	Select Properties. Select Java Build Path from the list. Go to Libraries
+●	Click on Add Library. Select TestNG. Click on Next. Click on Finish
+●	Click on Apply and Close
+     
+
+Step 2.1.4: Creating a class file named TestAnnotations
+●	In the Project Explorer, expand Annotations->Java Resources
+●	Right click on src and choose New->Class
+●	In Class Name, enter TestAnnotations. In Package Name, enter com.testannotations and click on Finish
+●	Enter the following code:
+package com.testannotations;
+
+import org.testng.annotations.*;
+
+public class TestAnnotations {
+	
+	@Test
+	public void Test1() {
+		System.out.println("Test1 Executed");
+	}
+	@Test
+	public void Test2() {
+		System.out.println("Test2 Executed");
+	}
+	
+	@BeforeTest
+	public void beforeTest() {
+		System.out.println("BeforeTest Executed");
+	}
+	@AfterTest
+	public void AfterTest() {
+		System.out.println("AfterTest Executed");
+	}
+	
+	@BeforeMethod
+	public void beforeMethod() {
+		System.out.println("BeforeMethod Executed");
+	}
+	@AfterMethod
+	public void afterMethod() {
+		System.out.println("AfterMethod Executed");
+	}
+	
+	@BeforeClass
+	public void beforeClass() {
+		System.out.println("BeforeClass Executed");
+	}
+	@AfterClass
+	public void afterClass() {
+		System.out.println("AfterClass Executed");
+	}
+	
+}
+    
+
+Step 2.1.5: Running the project as TestNG
+●	Right click on TestAnnotations class. Click on TestNG->Convert to TestNG
+●	Click on Finish. It will create a TestNG.xml file. Open that file
+●	Right click. Select Run As ->TestNG Suite
+
+
+Step 2.1.6: Pushing the code to your GitHub repositories
+●	Open your command prompt and navigate to the folder where you have created your files.
+cd <folder path>
+●	Initialize your repository using the following command:
+git init
+●	Add all the files to your git repository using the following command:
+git add .
+●	Commit the changes using the following command:
+git commit .  -m “Changes have been committed.”
+●	Push the files to the folder you initially created using the following command:
+git push -u origin master

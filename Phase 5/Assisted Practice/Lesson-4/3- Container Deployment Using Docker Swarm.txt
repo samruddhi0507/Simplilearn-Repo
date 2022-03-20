@@ -1,0 +1,58 @@
+Assisted Practice: 4.3 Container Deployment Using Docker Swarm
+
+         This section will guide you to:
+●	Deploy a Docker container on Docker swarm for orchestration.
+
+This lab has four subsections, namely:
+4.3.1  Setting up a Docker instance
+4.3.2  Building a custom Docker image to be deployed
+4.3.3  Initializing a Docker swarm cluster and deploying a container to the cluster
+4.3.4 Pushing the code to GitHub repositories
+
+
+Step 4.3.1: Setting up a Docker instance
+
+●	Docker version 18.09.7 is installed in your practice lab. (Refer FSD: Lab Guide - Phase 5)
+●	Type the following command to check the docker version installed on lab:
+
+	docker version
+ 
+
+
+Step 4.3.2: Building a custom Docker image to be deployed
+●	First, clone the Git repository on Docker host using the command below:
+	git clone https://github.com/Anuj1990/Docker.git
+●	Run with docker build command to build a custom Docker image
+cd Docker 
+docker build -t phpcode . -f Dockerfile
+
+●	Once the image is built, check if it is built properly or not. You can see a Docker image entry using Docker images command
+
+ 
+
+
+Step 4.3.3: Initializing a Docker swarm cluster and deploying a container to the cluster
+
+●	First, we need to initialize Docker swarm using the set of commands given below:
+docker swarm init
+docker node ls
+ 
+●	Once the node is configured, deploy the custom Docker image on the Docker swarm cluster following the process shown below
+docker service create -p 80:80 --name webserver phpcode
+docker service ls
+curl localhost
+ 
+
+
+Step 4.3.4: Pushing the code to your GitHub repositories
+●	Open your command prompt and navigate to the folder where you have created your files.
+cd <folder path>
+●	Initialize your repository using the following command:
+git init
+●	Add all the files to your git repository using the following command:
+git add .
+●	Commit the changes using the following command:
+git commit .  -m “Changes have been committed.”
+●	Push the files to the folder you initially created using the following command:
+git push -u origin master
+

@@ -1,0 +1,46 @@
+Assisted Practice: 3.16 Create an IAM Role
+
+This section will guide you to: 
+●	Create an IAM role
+
+This lab has four subsections, namely:
+3.16.1 Creating an IAM role
+3.16.2 Adding AWS policy to the role
+3.16.3 Providing a key and a value for the role
+3.16.4 Pushing the files to GitHub repositories
+
+Step 3.16.1: Creating an IAM role
+●	In the IAM panel, click on Roles -> Create role
+ 
+
+●	Select the service
+ 
+
+
+Step 3.16.2: Adding AWS policy to the role
+ 
+
+Step 3.16.3: Providing a key and a value for the role
+●	Add a key and a value to the role
+ 
+
+●	Add a role:
+
+ 
+●	Once the role is created, you can find it in the IAM panel
+
+ 
+
+
+Step 3.16.4: Pushing the code to your GitHub repositories
+●	Open your command prompt and navigate to the folder where you have created your files.
+cd <folder path>
+●	Initialize your repository using the following command:
+git init
+●	Add all the files to your git repository using the following command:
+git add .
+●	Commit the changes using the following command:
+git commit .  -m “Changes have been committed.”
+●	Push the files to the folder you initially created using the following command:
+git push -u origin master
+

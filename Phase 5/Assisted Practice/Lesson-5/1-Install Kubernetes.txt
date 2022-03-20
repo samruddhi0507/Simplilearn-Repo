@@ -1,0 +1,59 @@
+Assisted Practice: 5.1 Install Kubernetes
+
+This section will guide you:
+●	To install Kubernetes on a standalone server in order to deploy a custom Docker container
+
+This lab has mainly three subsections, namely:
+5.1.1 Installing prerequisites packages 
+5.1.2 Configuring Kubernetes
+5.1.3 Pushing the code to GitHub repositories
+
+Step 5.1.1: Installing prerequisites packages
+●	Kubernetes is already installed in your practice lab. (Refer FSD: Lab Guide - Phase 5)
+
+●	Run the docker version command to validate Docker.
+docker version
+ 
+
+Step 5.1.2: Configuring Kubernetes
+●	Configure Kubernetes using the procedure below.
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" >/etc/apt/sources.list.d/kubernetes.list
+apt-get update
+apt-get install -y kubelet kubeadm kubectl
+ 
+
+●	Initialize Kubernetes to deploy containers using Kubernetes CLI.
+kubeadm init
+ 
+
+●	Once Kubernetes is initialized, configure Kubernetes to start using the Kubernetes cluster.
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+ 
+
+●	After the cluster gets started, deploy a weave network to the cluster.
+export kubever=$(kubectl version | base64 | tr -d '\n')
+kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$kubever"
+
+ 
+●	With weave network deployment, validate that the node is up and running. That will help to deploy a Docker container to the Kubernetes cluster.
+kubectl get node
+kubectl get pods --all-namespaces
+
+ 
+
+
+Step 5.1.3: Pushing the code to your GitHub repositories
+●	Open your command prompt and navigate to the folder where you have created your files.
+cd <folder path>
+●	Initialize your repository using the following command:
+git init
+●	Add all the files to your git repository using the following command:
+git add .
+●	Commit the changes using the following command:
+git commit .  -m “Changes have been committed.”
+●	Push the files to the folder you initially created using the following command:
+git push -u origin master

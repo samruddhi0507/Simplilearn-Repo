@@ -1,0 +1,74 @@
+Assisted Practice: 3.15 Create an IAM User
+
+This section will guide you to:
+●	Create an IAM user
+●	Validate the newly created IAM user
+
+This lab has five subsections, namely:
+3.15.1 Selecting the IAM from the AWS Console
+3.15.2 Navigating to the user creation page 
+3.15.3 Changing access permissions
+3.15.4 Adding an identifier 
+3.15.5 Pushing the files to GitHub repositories
+
+Step 3.15.1: Selecting the IAM from the AWS console
+
+●	Login to your AWS console and search for IAM
+
+ 
+
+
+Step 3.15.2: Navigate to the user creation page
+
+●	Click on Users to redirect to the user creation page to create IAM users 
+
+ 
+
+
+Step 3.15.3: Changing access permissions
+
+●	Add username in the User name* section. Select AWS Management Console access and select one of the ways to configure console password 
+ 
+●	Either we can add user to the created group or we can add policy as shown below:
+
+ 
+
+●	In case a user needs to add a policy first, then he or she needs to search and then add policy to the user 
+
+ 
+
+Step 3.15.4: Adding an identifier
+●	Add an identifier by adding key and value to tag each user as shown below:
+ 
+●	Finally, it will create a user with a group or an added policy
+ 
+
+●	On successful user creation, a URL will be created with which a user can login as an IAM user
+
+ 
+
+●	The newly created user will be available on the dashboard as shown below:
+
+ 
+
+●	By clicking on each user, you can see the key sign in the URL
+
+ 
+
+●	By selecting a user, you can add that user to a particular group 
+
+ 
+
+
+Step 3.15.5: Pushing the code to your GitHub repositories
+●	Open your command prompt and navigate to the folder where you have created your files.
+cd <folder path>
+●	Initialize your repository using the following command:
+git init
+●	Add all the files to your git repository using the following command:
+git add .
+●	Commit the changes using the following command:
+git commit .  -m “Changes have been committed.”
+●	Push the files to the folder you initially created using the following command:
+git push -u origin master
+

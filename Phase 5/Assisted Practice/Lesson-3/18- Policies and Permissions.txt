@@ -1,0 +1,59 @@
+Assisted Practice: 3.18 Policies and Permissions
+
+This section will guide you to: 
+●	Implement policies and permissions on an S3 bucket
+
+This lab has three subsections, namely:
+3.18.1 Creating a bucket
+3.18.2 Adding policies
+3.18.3 Pushing the files to GitHub repositories
+
+Step 3.18.1: Creating a bucket
+●	Create a new bucket in which we want to add policy with all default settings.
+
+ 
+
+●	Click on the Permission section.
+●	Go to Bucket Policy.
+●	It will open the console where you can add policy.
+
+
+Step 3.18.2: Adding policies
+●	Click on the Policy Generator.
+ 
+
+●	Select the type of policy and services required.
+
+ 
+
+
+
+●	Add ARN for S3 to add the policy.
+ 
+
+●	Click on policy generator to create the JSON of the policy.
+
+ 
+
+
+●	Copy the generated JSON.
+
+ 
+
+●	Paste the JSON in the policy console of bucket and click on Save. 
+
+ 
+
+
+Step 3.18.3: Pushing the code to your GitHub repositories
+●	Open your command prompt and navigate to the folder where you have created your files.
+cd <folder path>
+●	Initialize your repository using the following command:
+git init
+●	Add all the files to your git repository using the following command:
+git add .
+●	Commit the changes using the following command:
+git commit .  -m “Changes have been committed.”
+●	Push the files to the folder you initially created using the following command:
+git push -u origin master
+

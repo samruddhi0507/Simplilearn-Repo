@@ -1,0 +1,49 @@
+Assisted Practice: 3.5 Format and Mount an EBS Volume
+
+This section will guide you to: 
+●	Format and mount an EBS volume
+
+This lab has four subsections, namely:
+3.5.1 Attaching an existing EBS volume
+3.5.2 Mounting the EBS volume
+3.5.3 Unmounting the EBS volume
+3.5.4 Pushing the files to GitHub repositories
+
+Step 3.5.1: Attaching an existing EBS volume
+●	Select an existing volume and click on Attach Volume
+●	Select the instance
+
+ 
+
+Step 3.5.2: Mounting the EBS volume
+●	Login to your EC2 instance and list the available disks using the following command:
+ldblk
+●	Use the following command to check if the volume has any data:
+	sudo file -s /dev/xvdf
+●	Use the following command to format the volume to ext4 filesystem:
+sudo mkfs -t ext4 /dev/xvdf
+●	Use the following command to create a directory to mount the volume:
+sudo mkdir /newvolume
+●	Use the following command to mount the volume:
+sudo mount /dev/xvdf /newvolume/
+●	Check the disk space using the following command:
+cd /newvolume
+df -h .
+
+
+Step 3.5.3: Unmounting the EBS volume
+●	Use the following command to unmount the volume:
+umount /dev/xvdf
+
+Step 3.5.4: Pushing the code to your GitHub repositories
+●	Open your command prompt and navigate to the folder where you have created your files.
+cd <folder path>
+●	Initialize your repository using the following command:
+git init
+●	Add all the files to your git repository using the following command:
+git add .
+●	Commit the changes using the following command:
+git commit .  -m “Changes have been committed.”
+●	Push the files to the folder you initially created using the following command:
+git push -u origin master
+

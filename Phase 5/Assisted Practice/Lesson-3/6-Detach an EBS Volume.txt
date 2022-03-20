@@ -1,0 +1,39 @@
+Assisted Practice: 3.6 Detach an EBS Volume
+
+This section will guide you to: 
+●	Detach an EBS volume from an instance
+
+This lab has three subsections, namely:
+ 	3.6.1 Selecting the EBS volume you want to detach
+ 	3.6.2 Detaching the volume
+	3.6.3 Pushing the files to GitHub repositories
+
+Step 3.6.1: Selecting the EBS volume you want to detach
+●	Choose the bucket
+ 
+
+●	Select Detach Volume option
+ 
+
+
+Step 3.6.2: Detaching the volume
+●	Select Yes once the confirmation pop-up appears
+ 
+
+●	Once detached, the volume will be labeled as Available
+
+ 
+
+
+Step 3.6.3: Pushing the code to your GitHub repositories
+●	Open your command prompt and navigate to the folder where you have created your files.
+cd <folder path>
+●	Initialize your repository using the following command:
+git init
+●	Add all the files to your git repository using the following command:
+git add .
+●	Commit the changes using the following command:
+git commit .  -m “Changes have been committed.”
+●	Push the files to the folder you initially created using the following command:
+git push -u origin master
+

@@ -1,0 +1,21 @@
+Assisted Practice: 3.9 View snapshot
+
+This section will guide you to view a snapshot in your AWS account. 
+
+Step 1: To view snapshots, you need to navigate to the EC2 dashboard available on the panel on the left. Click on snapshot to view all available snapshots.  
+
+ 
+
+
+Step 2: Pushing the code to your GitHub repositories
+●	Open your command prompt and navigate to the folder where you have created your files.
+cd <folder path>
+●	Initialize your repository using the following command:
+git init
+●	Add all the files to your git repository using the following command:
+git add .
+●	Commit the changes using the following command:
+git commit .  -m “Changes have been committed.”
+●	Push the files to the folder you initially created using the following command:
+git push -u origin master
+

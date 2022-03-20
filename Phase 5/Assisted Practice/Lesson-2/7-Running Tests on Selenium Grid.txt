@@ -1,0 +1,43 @@
+Assisted Practice: 2.7 Running Tests on Selenium Grid
+
+This section will guide you to:
+●	Run the scripts on Selenium grid
+
+This lab has  two subsections, namely:
+2.7.1 Running the tests on Selenium grid
+2.7.2 Pushing the code to your GitHub repositories
+
+Step 2.7.1: Running the Tests on Selenium grid
+●	Open Eclipse
+●	Click on Package and navigate to New --> Class
+●	Give a valid Class name (example: GridTest)
+●	Check the public static void main checkbox and click on finish, which will create a blank Java class
+●	Write the desired capabilities in the class, which looks like
+         
+●	Start the selenium grid hub in command prompt using java -jar selenium-server-standalone-3.141.59.jar -role hub command
+●	Start the selenium grid node in Command prompt using java -Dwebdriver.chrome.driver="chromedriver.exe -jar selenium-server-standalone-3.141.59.jar  -role node -hub http://localhost:4444/grid/register command
+●	Go to eclipse and add a statement for remoteWebdriver, which has an implementation of  WebDriver, should pass the hub port (http://192.168.1.248:4444/wd/hub), and  DesiredCapabilities object as parameters
+●	Write Selenium code to open the browser and navigate to any web page (example: Google page)
+         
+●	Execute the Java program by right-clicking on the program and navigating to Run As--> 1 Java Application
+●	This is how it looks like in Eclipse console
+         
+●	We can see the capabilities passed through are displayed in both command prompts in server (hub) as well as in clients (node) 
+●	Selenium grid hub in command prompt with desired capabilities looks like
+         
+●	Selenium grid node in command prompt with desired capabilities looks like
+        
+
+
+Step 2.7.2: Pushing the code to your GitHub repositories
+●	Open your command prompt and navigate to the folder where you have created your files.
+cd <folder path>
+●	Initialize your repository using the following command:
+git init
+●	Add all the files to your git repository using the following command:
+git add .
+●	Commit the changes using the following command:
+git commit .  -m “Changes have been committed.”
+●	Push the files to the folder you initially created using the following command:
+git push -u origin master
+

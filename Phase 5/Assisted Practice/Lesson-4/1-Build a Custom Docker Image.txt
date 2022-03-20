@@ -1,0 +1,41 @@
+Assisted Practice: 4.1 Build a Custom Docker Image
+
+           This section will guide you to:
+●	Build a custom Docker image using a custom Dockerfile and deploy it on Docker host.
+Prerequisites:
+●	Docker must be installed on your system.
+
+This lab has three subsections, namely:
+4.1.1 Clone Git repository
+4.1.2 Docker Build
+4.1.3 Pushing the code to GitHub repositories
+
+Docker is already installed in your lab. (Refer FSD: Lab Guide - Phase 5)
+Step 4.1.1: Clone Git repository
+●	First, clone the Git repository on a Docker host using the command below:
+		git clone https://github.com/Anuj1990/Docker.git
+Step 4.1.2: Docker Build
+●	Then, proceed with the docker build command to build a custom docker image.
+cd Docker
+		dockerbuild -t phpcode . -f Dockerfile
+
+●	Once the image is built, check the image using docker run command and then run it to initialize custom container on Docker host.
+docker images
+docker run -d --name phpcode -p 80:80 phpcode
+
+
+●	Once the container is up and running, validate the connectivity using the curl command to see if php code is running on port 80 or not.
+
+
+Step 4.1.3: Pushing the code to your GitHub repositories
+●	Open your command prompt and navigate to the folder where you have created your files.
+cd <folder path>
+●	Initialize your repository using the following command:
+git init
+●	Add all the files to your git repository using the following command:
+git add .
+●	Commit the changes using the following command:
+git commit .  -m “Changes have been committed.”
+●	Push the files to the folder you initially created using the following command:
+git push -u origin master
+

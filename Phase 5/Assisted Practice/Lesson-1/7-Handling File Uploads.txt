@@ -1,0 +1,96 @@
+1.7 Handling File Uploads
+	
+
+This section will guide you to:
+●	How to upload the Desktop file in selenium WeDriver
+
+Development Environment
+●	Eclipse IDE for Enterprise Java Developers Version Oxygen.3a Release (4.7.3a)
+●	Java Development Kit Version 8
+●	Selenium standalone server
+●	Autoit
+
+This guide has mainly Two subsections, namely: 
+1.7.1 Handling File Upload by SendKeys
+1.7.2 Handling File Upload by AutoIT script
+1.7.3 Pushing the code to GitHub repositories
+	
+Step 1.7.1: Handling File upload by SendKeys
+●	Open Eclipse
+●	Create a project : Click on file->New->Java project
+●	Enter project name as UploadFile 
+●	Click on Finish
+●	In the project explorer, Expand UploadFile
+●	Right click on src and choose New->Class
+●	In Package Name, enter com.ecommerce and in Name enter Upload and click on Finish
+●	Locate the browse button using chropath/firebug.
+●	Set the path using SendKeys. And the code looks like below
+
+//Locating 'browse' button
+ WebElement browse =driver.findElement(By.id("uploadfile"));
+ //pass the path of the file to be uploaded using Sendkeys method
+ browse.sendKeys("D:\\SoftwareTestingMaterial\\UploadFile.txt");
+
+
+Step 1.7.2: Handling File Upload by AutoIT script
+●	To open it go to Start->Autoit v3->Autoit window info
+●	Now drag the Finder tool box to the object in which you are interested
+
+
+ 
+
+●	Build an AutoIT script using SciTE editor and write the script using ControlFocus, ControlsetText, and ControlClick  commands.
+●	And the script looks like below
+
+ 
+
+●	Save the Script with .au3 extension.
+●	Compile the .au3 script which converts it into .exe file.
+●	Pass the .exe path into selenium test script using method
+             Runtime.getRuntime().exec(“C:\AutoIt\Autoitscript.exe”)
+●	Complete script looks like this
+
+
+import java.io.IOException;
+ 
+import java.util.concurrent.TimeUnit;
+ 
+import org.openqa.selenium.By;
+ 
+import org.openqa.selenium.WebDriver;
+ 
+import org.openqa.selenium.firefox.FirefoxDriver;
+ 
+public class AutoIt {
+ 
+ private static WebDriver driver = null;
+ 
+ public static void main(String[] args) throws IOException, InterruptedException {
+ 
+     driver = new FirefoxDriver();
+ 
+     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+ 
+     driver.get("http://toolsqa.com/automation-practice-form");
+ 
+     driver.findElement(By.id("photo")).click();
+ 
+     Runtime.getRuntime().exec("D:\AutoIt\AutoItTest.exe");
+ 
+     Thread.sleep(5000);
+ 
+     driver.close();
+
+
+Step 1.7.3: Pushing the code to your GitHub repositories
+Open your command prompt and navigate to the folder where you have created your files.
+cd <folder path>
+Initialize your repository using the following command:
+git init
+Add all the files to your git repository using the following command:
+git add . 
+Commit the changes using the following command:
+git commit .  -m “Changes have been committed.”
+Push the files to the folder you created initially using the following command:
+git push -u origin master
+

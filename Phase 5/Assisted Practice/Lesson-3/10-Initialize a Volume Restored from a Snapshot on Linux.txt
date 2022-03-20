@@ -1,0 +1,42 @@
+Assisted Practice: 3.10 Initialize a Volume Restored from a Snapshot on Linux
+
+This section will guide you to: 
+●	Initialize a volume restored from a snapshot
+
+This lab has three subsections, namely:
+3.10.1 Selecting the snapshot 
+3.10.2 Restoring volume from the snapshot
+3.10.3 Pushing the files to GitHub repositories
+
+Step 3.10.1: Selecting the snapshot
+●	Go to EC2 dashboard in EBS and click on Snapshot 
+
+ 
+
+
+Step 3.10.2: Restoring volume from the snapshot
+●	Select the snapshot and click on Action
+
+ 
+
+●	You can specify the key and value to identify the volume
+
+ 
+
+●	Restore the volume from the snapshot
+
+ 
+
+
+Step 3.10.3: Pushing the code to your GitHub repositories
+●	Open your command prompt and navigate to the folder where you have created your files.
+cd <folder path>
+●	Initialize your repository using the following command:
+git init
+●	Add all the files to your git repository using the following command:
+git add .
+●	Commit the changes using the following command:
+git commit .  -m “Changes have been committed.”
+●	Push the files to the folder you initially created using the following command:
+git push -u origin master
+

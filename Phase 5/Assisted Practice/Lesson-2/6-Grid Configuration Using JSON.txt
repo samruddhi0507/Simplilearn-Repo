@@ -1,0 +1,56 @@
+Assisted Practice: 2.6 Grid Configuration Using JSON
+
+This section will guide you to:
+●	Configure the grid using JSON
+
+This lab has mainly three subsections, namely:
+2.6.1 Configuring the grid hub using JSON
+2.6.2 Configuring the grid nodes using JSON
+2.6.3 Pushing the code to your GitHub repositories
+
+Step 2.6.1: Configuring the grid hub using JSON
+a.	Create JSON file for the hub which looks like
+ 
+b.	Save it in a folder with a valid name (example: myhub) in which we have saved  Selenium standalone Server jar file
+c.	Go to command prompt
+d.	Navigate to folder structure where you have saved the Selenium standalone Server jar file
+e.	Type the below command in command prompt
+        Java -jar selenium-server-standalone-3.141.59.jar -role hub -hubConfig myhub.json and 	click on Enter button, which looks like
+ 	
+ 
+f.	Open the Chrome browser
+g.	Enter URL as ‘http://localhost:4444/grid/console’ and click on enter 
+h.	Grid console page is loaded as below
+ 
+
+Step 2.6.2: Configuring the grid nodes using JSON
+a.	Once the Selenium Grid Hub using JSON is configured, the next step is to configure Selenium Grid nodes using JSON.
+b.	Create JSON file for node, which looks like:
+ 
+c.	Save it in a folder with a valid name (example: mynode) in which we have saved  Selenium standalone Server jar file
+d.	Open the new command prompt
+e.	Navigate to the folder structure where you have saved the Selenium standalone server jar file
+f.	Type the below command in command prompt
+java -Dwebdriver.gecko.driver="geckodriver.exe" -		Dwebdriver.chrome.driver="chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig mynodes.json 
+and click on Enter button, which looks like
+ 
+g.	Open the browser
+h.	Enter URL as http://localhost:4444/grid/console and click on Enter 
+i.	Grid console page is loaded, which shows Browsers by default	
+ 
+j.	      Click on Configuration which shows Configuration details 
+      	 
+
+
+Step 2.6.3: Pushing the code to your GitHub repositories
+●	Open your command prompt and navigate to the folder where you have created your files.
+cd <folder path>
+●	Initialize your repository using the following command:
+git init
+●	Add all the files to your git repository using the following command:
+git add .
+●	Commit the changes using the following command:
+git commit .  -m “Changes have been committed.”
+●	Push the files to the folder you initially created using the following command:
+git push -u origin master
+

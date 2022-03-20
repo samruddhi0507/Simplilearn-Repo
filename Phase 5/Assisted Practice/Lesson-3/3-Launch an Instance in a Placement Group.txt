@@ -1,0 +1,36 @@
+4.3 Launch an Instance in a Placement Group
+
+This section will guide you to: 
+●	Launch an instance in a placement group
+
+This lab has two subsections, namely:
+ 4.3.1 Creating a placement group
+	4.3.2 Launching an instance in the placement group
+
+Step 4.3.1: Creating a placement group
+●	Click on Create Placement Group
+ 
+
+●	Provide a name and strategy
+
+ 
+
+
+
+Step 4.3.2: Launching an instance in the placement group
+
+●	Launch the new EC2 instance
+
+ 
+
+●	Select the placement group
+
+ 
+
+
+ 
+
+
+
+●	Verify the placement group of the instance
+

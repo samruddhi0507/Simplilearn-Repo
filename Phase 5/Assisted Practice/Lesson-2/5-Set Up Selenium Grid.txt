@@ -1,0 +1,50 @@
+Assisted Practice: 2.5 Set Up Selenium Grid
+
+This section will guide you to:
+●	Set up Selenium Grid, which includes setup of Hub and Nodes
+
+This lab has three subsections, namely:
+2.5.1 Setting up Selenium Grid hub
+2.5.2 Setting up Selenium Grid Nodes
+2.5.3 Pushing the code to your GitHub repositories
+
+Step 2.5.1: Setting up Selenium Grid hub
+a.	Download Selenium standalone Server jar file from https://www.seleniumhq.org/download/ link
+ 
+b.	Save it in a folder 
+c.	Go to command prompt
+d.	Navigate to folder structure where you have saved the  Selenium standalone Server jar file
+e.	Type the below command in command prompt
+        		Java -jar selenium-server-standalone-3.141.59.jar -role hub and click on Enter button
+ 
+f.	Open the Chrome browser
+g.	Enter URL as http://localhost:4444/grid/console and click on Enter 
+h.	Grid console page is loaded as below
+ 
+
+Step 2.5.2: Setting up the Selenium Grid Nodes
+a.	Once the Selenium Grid Hub is set up, the next step is to set up Selenium Grid nodes.
+b.	Open the new command prompt
+c.	Navigate to the folder structure where you have saved the Selenium standalone server jar file
+d.	Type the below command in command prompt
+              java -jar selenium-server-standalone-3.141.59.jar -role node -hub 	http://localhost:4444/grid/register and click on Enter button, which looks like
+  
+e.	Open the browser
+f.	Enter URL as http://localhost:4444/grid/console and click on Enter 
+g.	Grid console page is loaded below, which shows Browsers by default	
+ 
+h.	Click on Configuration, which shows Configuration details  			  	 
+
+
+Step 2.5.3: Pushing the code to your GitHub repositories
+●	Open your command prompt and navigate to the folder where you have created your files.
+cd <folder path>
+●	Initialize your repository using the following command:
+git init
+●	Add all the files to your git repository using the following command:
+git add .
+●	Commit the changes using the following command:
+git commit .  -m “Changes have been committed.”
+●	Push the files to the folder you initially created using the following command:
+git push -u origin master
+

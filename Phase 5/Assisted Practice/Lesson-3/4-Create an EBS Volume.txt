@@ -1,0 +1,49 @@
+Assisted Practice: 3.4 Create an EBS Volume
+
+This section will guide you to:
+●	Change the volume size of an instance
+
+
+This lab has six subsections, namely:
+3.4.1 Selecting the volume tab in the EC2 dashboard
+3.4.2 Creating a new volume by clicking on Create
+3.4.3 Selecting the volume type according to the project requirement
+3.4.4 Creating a new volume by specifying the size and defining the zone
+3.4.5 Verifying the new volume created on the volume console and its availability
+3.4.6 Pushing the code to GitHub repositories
+
+
+Step 3.4.1: Selecting the volume tab in the EC2 dashboard
+ 
+Step 3.4.2: Creating a new volume by clicking on Create 
+ 
+
+
+Step 3.4.3: Selecting the volume type according to the project requirement 
+
+
+ 
+
+
+Step 3.4.4: Creating a new volume by specifying the size and defining the zone
+
+ 
+
+
+Step 3.4.5: Verifying the new volume created on the volume console and its availability
+
+ 
+
+
+Step 3.4.6: Pushing the code to your GitHub repositories
+●	Open your command prompt and navigate to the folder where you have created your files.
+cd <folder path>
+●	Initialize your repository using the following command:
+git init
+●	Add all the files to your git repository using the following command:
+git add .
+●	Commit the changes using the following command:
+git commit .  -m “Changes have been committed.”
+●	Push the files to the folder you initially created using the following command:
+git push -u origin master
+

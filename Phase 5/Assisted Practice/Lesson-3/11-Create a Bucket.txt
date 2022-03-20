@@ -1,0 +1,63 @@
+Assisted Practice: 3.11 Create a Bucket
+
+This section will guide you to:
+●	Create a bucket
+
+This lab has eight subsections, namely:
+3.11.1 Selecting S3 from the storage of the AWS service panel
+3.11.2 Verifying the button to create a bucket 
+3.11.3 Providing a bucket name and region
+3.11.4 Entering key and value for identification and tracking the bucket
+3.11.5 Blocking all the public access
+3.11.6 Reviewing all parameters and creating the bucket 
+3.11.7 Verifying the newly created bucket on the panel of S3
+3.11.8 Pushing the files to GitHub repositories
+
+Step 3.11.1: Selecting S3 from the storage of the AWS service panel
+ 
+
+
+Step 3.11..2: Verifying the button to create a bucket 
+ 
+
+
+Step 3.11.3: Providing a bucket name and region
+●	 Make sure that the bucket name is unique 
+ 
+
+
+Step 4.11.4: Entering key and value for identification and tracking the bucket
+
+
+ 
+
+
+Step 3.11.5: Blocking all the public access
+●	If required, you can configure it later
+
+
+
+ 
+
+
+Step 3.11.6: Reviewing all parameters and creating the bucket 
+
+ 
+
+
+Step 3.11.7: Verifying the newly created bucket on the panel of S3 
+
+ 
+
+Step 3.11.8: Pushing the code to your GitHub repositories
+●	Open your command prompt and navigate to the folder where you have created your files.
+cd <folder path>
+●	Initialize your repository using the following command:
+git init
+●	Add all the files to your git repository using the following command:
+git add .
+●	Commit the changes using the following command:
+git commit .  -m “Changes have been committed.”
+●	Push the files to the folder you initially created using the following command:
+git push -u origin master
+
